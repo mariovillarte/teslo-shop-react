@@ -9,7 +9,7 @@ import { DashboardPage } from "./admin/pages/dashboard/DashboardPage";
 import { AdminProductsPage } from "./admin/pages/products/AdminProductsPage";
 import { AdminProductPage } from "./admin/pages/product/AdminProductPage";
 import { AdminRoute, NotAuthenticatedRoute } from "./components/routes/ProtectedRoutes";
-import { createHashRouter } from "react-router";
+import { createHashRouter, Navigate } from "react-router";
 
 const AuthLayout = lazy(() => import("./auth/AuthLayout"));
 const AdminLayout = lazy(() => import("./admin/layouts/AdminLayout"));
